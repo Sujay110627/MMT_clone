@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakeMyTrip Functional Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://promos.makemytrip.com/Growth/Images/1x/mmt_dt_top_icon.png" alt="MakeMyTrip Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#">List Your Property</a>
+      <a href="#">myBiz</a>
+      <a href="#">My Trips</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="tabs" id="tabs">
+      <div class="tab"><i class="fas fa-plane" id="plane-icon"></i><span class="flight-text">flights</span></div>
+      <div class="tab"><i class="fas fa-hotel"></i> Hotels</div>
+      <div class="tab"><i class="fas fa-home"></i> Homestays & Villas</div>
+      <div class="tab"><i class="fas fa-umbrella-beach"></i> Holiday Packages</div>
+      <div class="tab"><i class="fas fa-train"></i> Trains</div>
+      <div class="tab"><i class="fas fa-bus"></i> Buses</div>
+      <div class="tab"><i class="fas fa-taxi"></i> Cabs</div>
+      <div class="tab"><i class="fas fa-money-check-alt"></i> Forex Card & Currency</div>
+      <div class="tab"><i class="fas fa-shield-alt"></i> Travel Insurance</div>
+    </div>
+
+    <section class="search-container">
+      <div class="trip-type" id="tripType">
+        <label><input type="radio" name="trip" value="One Way" checked> One Way</label>
+        <label><input type="radio" name="trip" value="Round Trip"> Round Trip</label>
+        <label><input type="radio" name="trip" value="Multi City"> Multi City</label>
+      </div>
+
+      <div class="search-fields">
+        <div class="field">
+            <label>From</label>
+            <div class="input"><i class="fas fa-plane-departure"></i> Hyderabad (HYD)</div>
+        </div>
+        <div class="field">
+            <label>To</label>
+            <div class="input"><i class="fas fa-plane-arrival"></i> Mumbai (BOM)</div>
+        </div>
+        <div class="field">
+            <label>Departure</label>
+            <div class="input"><i class="fas fa-calendar-alt"></i> 16 Feb'25</div>
+        </div>
+        <div class="field">
+            <label>Return</label>
+            <div class="input"><i class="fas fa-calendar-day"></i> Tap to add</div>
+        </div>
+        <div class="field">
+            <label>Travellers & Class</label>
+            <div class="input"><i class="fas fa-user-friends"></i> 1 Traveller, Economy</div>
+        </div>
+    </div>
+
+
+      <div class="fare-options" id="fareOptions">
+        <button class="fare-button active" data-fare="Regular">Regular</button>
+        <button class="fare-button" data-fare="Student">Student</button>
+        <button class="fare-button" data-fare="Senior Citizen">Senior Citizen</button>
+        <button class="fare-button" data-fare="Armed Forces">Armed Forces</button>
+        <button class="fare-button" data-fare="Doctor and Nurses">Doctor and Nurses</button>
+      </div>
+
+      <button class="search-button" id="searchButton">SEARCH</button>
+    </section>
+
+    <footer class="footer">
+      <div><i class="fas fa-map-marker-alt"></i> Where2Go</div>
+      <div><i class="fas fa-shield-alt"></i> Insurance For International Trips</div>
+      <div><i class="fas fa-plane-departure"></i> Explore International Flights</div>
+      <div><i class="fas fa-briefcase"></i> MICE Offsites, Events & Meetings</div>
+      <div><i class="fas fa-gift"></i> Gift Cards</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
